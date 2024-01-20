@@ -39,6 +39,17 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <!-- Redirect https://liploc.shubodhs.ai without www -->
+  <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+          if (window.location.pathname === '/liploc') {
+              window.location.href = 'https://liploc.shubodhs.ai';
+          }
+      });
+  </script>
+
+
 </head>
 <body>
 
