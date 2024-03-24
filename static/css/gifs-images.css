@@ -72,3 +72,16 @@
   font-size: 1.1em; /* Adjust font size as needed */
   margin-top: 10px; /* Space between image and description */
 }
+
+.single-image-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.single-image-item .image-description {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 1.1em;
+}
