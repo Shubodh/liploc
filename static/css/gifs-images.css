@@ -1,0 +1,53 @@
+.gifs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Adjust the space between the GIFs as needed */
+  margin-bottom: 20px; /* Space before the next section */
+}
+
+.gif-item {
+  /* flex-grow: 1;  /* Allow the items to grow */
+  flex-basis: 33%;
+  /* flex-basis: 50%; Each item takes up half of the container's width */
+  text-align: center; /* Center-aligns the description */
+}
+
+.gif-item img {
+  max-width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintain the aspect ratio */
+  margin: 0; /* Remove any default margins */
+}
+
+.gif-description {
+  margin-top: 10px; /* Space between the GIF and its description */
+  font-size: 1.1em; /* Adjust the size of the description text as needed */
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Aligns items to the start of the container */
+  gap: 20px;
+  margin-bottom: 30px; /* Space before the next section */
+}
+
+.image-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center aligns the image and description */
+  text-align: center;
+}
+
+.image-item .image {
+  height: 350px; /* Fixed height for images */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the images cover the area without stretching */
+  margin-bottom: 10px; /* Space between image and description */
+}
+
+.image-description {
+  font-size: 1.0em;
+  /* If descriptions have different lengths and you want to align them at the top, set a minimum height */
+  min-height: 3em; /* Adjust as necessary to accommodate the tallest description */
+}

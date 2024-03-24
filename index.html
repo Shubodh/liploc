@@ -30,7 +30,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="stylesheet" href="./static/css/gifs.css">
+  <link rel="stylesheet" href="./static/css/gifs-images.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -148,6 +148,20 @@
           <p>
             Global visual localization in LiDAR-maps, crucial for autonomous driving applications, remains largely unexplored due to the challenging issue of bridging the cross-modal heterogeneity gap. Popular multi-modal learning approach Contrastive Language-Image Pre-Training (CLIP) has popularized contrastive symmetric loss using batch construction technique by applying it to multi-modal domains of text and image.
           </p>
+
+          <div class="images-container">
+            <div class="image-item">
+              <img class="image" src="static/images/1_ContrastiveLearningArchitecture.png" alt="Batched Contrastive Learning Architecture (Training)">
+              <div class="image-description">Batched Contrastive Learning Architecture </div>
+            </div>
+            <div class="image-item">
+              <img class="image" src="static/images/2_InferencePipeline.png" alt="Inference Pipeline">
+              <div class="image-description">Inference Pipeline</div>
+            </div>
+          </div>
+
+
+          
           <p>
             We apply this approach to the domains of 2D image and 3D LiDAR points on the task of cross-modal localization. Our method is explained as follows: A batch of N (image, LiDAR) pairs is constructed so as to predict what is the right match between N X N possible pairings across the batch by jointly training an image encoder and LiDAR encoder to learn a multi-modal embedding space. In this way, the cosine similarity between N positive pairings is maximized, whereas that between the remaining negative pairings is minimized. 
           </p>
