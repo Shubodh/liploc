@@ -51,3 +51,24 @@
   /* If descriptions have different lengths and you want to align them at the top, set a minimum height */
   min-height: 3em; /* Adjust as necessary to accommodate the tallest description */
 }
+
+
+.vertical-images-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the images vertically */
+  gap: 20px; /* Space between the images */
+}
+
+.vertical-image-item img {
+  max-width: 100%; /* Ensures image is not wider than the container */
+  max-height: 500px; /* Maximum height you want to set */
+  width: auto; /* Maintains the aspect ratio */
+  height: auto; /* Allows the height to scale based on the width */
+}
+
+.vertical-image-item .image-description {
+  text-align: center; /* Centers the text */
+  font-size: 1.1em; /* Adjust font size as needed */
+  margin-top: 10px; /* Space between image and description */
+}
